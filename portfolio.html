@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AeroTrope | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .p-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .p-card { border-radius: 15px; overflow: hidden; background: #00343d; transition: 0.3s; }
+        .p-card:hover { transform: scale(1.05); }
+        .p-card img { width: 100%; height: 200px; object-fit: cover; }
+        .p-card div { padding: 15px; font-weight: bold; text-align: center; }
+        .calc-section { margin-top: 60px; background: rgba(255,255,255,0.1); padding: 40px; border-radius: 20px; text-align: center; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">AeroTrope</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="analysis.html">Analysis</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="bg-title">PORTFOLIO</h2>
+        <h2 style="text-align: center;">Conceptual Prototype</h2>
+        
+        <div class="p-grid">
+            <div class="p-card"><img src="structure.png"><div>The Structure</div></div>
+            <div class="p-card"><img src="enhancement.png"><div>Enhancement blades</div></div>
+            <div class="p-card"><img src="prototype_mainnn.png"><div>The Final Model</div></div>
+        </div>
+
+        <div class="calc-section">
+            <h3>Engineering Calculations</h3>
+            <p>Access our full mathematical models and data analysis.</p>
+            <br>
+            <a href="A4finale.pdf" download class="btn">
+            <i class="fa-solid fa-file-pdf"></i> Download PDF
+            </a>
+        </div>
+
+        <div class="page-nav">
+            <a href="analysis.html" class="btn" style="background: #00343d;">← Analysis</a>
+            <a href="about.html" class="btn">Meet the Team →</a>
+        </div>
+    </div>
+</body>
+</html>

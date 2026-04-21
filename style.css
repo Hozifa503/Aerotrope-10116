@@ -1,0 +1,86 @@
+:root {
+    --bg-color: #b4d3e2;
+    --card-bg: #00343d;
+    --text-dark: #6facca;
+    --accent-green: #00343d;
+    --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #00343d;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo { font-size: 1.8rem; font-weight: 800; color: #659db0; letter-spacing: -1px; }
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover, .nav-links a.active { color: var(--white); }
+
+/* SHARED LAYOUT ELEMENTS */
+.container { padding: 60px 10%; min-height: 90vh; }
+
+.bg-title {
+    font-size: 6rem;
+    font-weight: 900;
+    color: #77a4b35d;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.section-subtitle { text-align: center; margin-bottom: 40px; font-weight: 500; opacity: 0.8; }
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--accent-green);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: 0.3s transform;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px #77a4b35d; }
+
+/* FOOTER NAVIGATION */
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #77a4b35d;
+}

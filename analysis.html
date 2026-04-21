@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AeroTrope | Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .feature-box { background: var(--card-bg); padding: 25px; border-radius: 15px; margin-bottom: 20px; border-left: 5px solid var(--accent-green); transition: 0.3s; }
+        .feature-box:hover { background: #296f92; transform: translateX(10px); }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">AeroTrope</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="analysis.html" class="active">Analysis</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="bg-title">ANALYSIS</h2>
+        <h2 style="text-align: center; font-size: 2.5rem;">Strategies & Features</h2>
+        <p class="section-subtitle">The engineering behind our sustainable Trope.</p>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="feature-box">
+                <h4>⚙️ Torque</h4>
+                <p>These documents detail the mechanics of a turbine requiring a torque of 0.95 N·m. By applying a radius of 0.2 m at a 90° angle, the necessary rotational force is calculated as 4.75 N. Additionally, using the pressure difference and radius, the required surface area is determined to be 0.316 m².</p>
+            </div>
+            <div class="feature-box">
+                <h4>🌬️ Venturi effect</h4>
+                <p>These documents explain how the Venturi effect and Bernoulli’s principle drive the turbine. As air moves from a narrow inlet to a wider outlet, its velocity changes from 4.72 m/s to 5.8 m/s, creating a pressure drop from 101,341 Pa to 101,319.5 Pa. This resulting pressure gradient generates the force necessary to rotate the turbine around its fixed axis</p>
+            </div>
+            <div class="feature-box">
+                <h4>🌀 Angular momentum</h4>
+                <p>This document explains how angular momentum ($40.4\text{ kg}\cdot\text{m}^2/\text{s}$) provides stability for turbines in turbulent urban areas like Helwan. By maximizing the moment of inertia through a hollow spherical design, the system maintains consistent rotation and electrical output despite fluctuating wind speeds and directions.</p>
+            </div>
+            <div class="feature-box">
+                <h4>⚡ Power collection </h4>
+                <p>The document discusses Power Collection, utilizing the Betz Power Equation to determine theoretical wind energy. While the prototype generated a theoretical 0.98W, the actual electrical output was 0.5W. This results in a 51% power coefficient (C p), reflecting high efficiency in converting kinetic energy into usable electricity.</p>
+            </div>
+        </div>
+
+        <div class="page-nav">
+            <a href="index.html" class="btn" style="background: #00343d;">← Back Home</a>
+            <a href="portfolio.html" class="btn">View Portfolio →</a>
+        </div>
+    </div>
+</body>
+</html>
